@@ -1,0 +1,9 @@
+$itemBackground: #90a4ae;
+$itemBorder: #546e7a;
+
+.orderbookItem {
+    border: 2px solid $itemBorder;
+    background: $itemBackground;
+    margin-bottom: 10px;
+    padding: 12px 22px;
+}

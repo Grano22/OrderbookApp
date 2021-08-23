@@ -1,0 +1,39 @@
+@charset "utf-8";
+@import "../../node_modules/bulma/bulma.sass";
+
+//Laout
+$spacingHorizontal: 25px;
+$in: min(calc(100vw - 8 * 25px), 610px);
+
+//Styling main page
+$mainBackground: #c5cae9;
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    background: $mainBackground;
+}
+
+.section {
+    .in {
+        margin: 0 auto;
+        max-width: $in;
+    }
+}
+
+.vl {
+    border-right: 4px solid #4c6570;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-25%);
+}
+
+@import './orderbook/container',
+'./orderbook/toolbar',
+'./orderbook/item'
+;
